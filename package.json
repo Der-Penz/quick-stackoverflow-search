@@ -2,13 +2,18 @@
 	"name": "quick-stackoverflow-search",
 	"displayName": "Editor Stackoverflow Search",
 	"description": "Search a Stackoverflow question by it's title in the editor",
-  "publisher": "DerPenz",
-	"version": "0.0.1",
-  "keywords": ["stackoverflow", "search", "editor"],
-  "galleryBanner": {
-    "color": "#6132ad",
-    "theme": "dark"
-  },
+	"publisher": "DerPenz",
+	"version": "1.0.0",
+	"keywords": [
+		"stackoverflow",
+		"search",
+		"editor"
+	],
+	"galleryBanner": {
+		"color": "#6132ad",
+		"theme": "dark"
+	},
+	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "^1.66.0"
 	},
@@ -28,12 +33,12 @@
 				"title": "Search on Stack Overflow",
 				"category": "SoSo"
 			},
-      {
+			{
 				"command": "quick-stackoverflow-search.soso-clipboard",
 				"title": "Search clipboard on Stack Overflow",
 				"category": "SoSo"
 			},
-      {
+			{
 				"command": "quick-stackoverflow-search.soso-selection",
 				"title": "Search selection on Stack Overflow",
 				"category": "SoSo"
@@ -45,7 +50,7 @@
 				"key": "ctrl+alt+e",
 				"mac": "cmd+alt+e"
 			},
-      {
+			{
 				"command": "quick-stackoverflow-search.soso-selection",
 				"key": "ctrl+alt+s",
 				"mac": "cmd+alt+s"
@@ -63,7 +68,7 @@
 					"group": "z_commands",
 					"when": "editorHasSelection"
 				},
-        {
+				{
 					"command": "quick-stackoverflow-search.soso-clipboard",
 					"group": "z_commands",
 					"when": "editorFocus"

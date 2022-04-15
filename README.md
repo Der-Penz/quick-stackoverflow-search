@@ -1,65 +1,47 @@
-# quick-stackoverflow-search README
+# Quick Stack Overflow search 
 
-This is the README for your extension "quick-stackoverflow-search". After writing up a brief description, we recommend including the following sections.
-
+This extension adds a quick way to search something on Stack Overflow 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+####There are 3 types of searches
 
-For example if there is an image subfolder under your extension project workspace:
+- search from input
+    use `CTRL+Shift+e` or open the `show all Commands` prompt to use it. Enter keywords for
+    your Question and additionally a tag with `/yourTag`
+    A tag can be `js, css, python, etc...`.
+   
+<br>
 
-\!\[feature X\]\(images/feature-x.png\)
+- search from clipboard
+     use `CTRL+Shift+c` or press `right click` and select `Search clipboard on Stack Overflow` to use it.
+     It will automaticly search for the content in your clipboard.
+ 
+<br>
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- search from selection
+     use `CTRL+Shift+s` or press `right click` and select `Search selection on Stack Overflow` to use it (*Note:* it is only available if you select something).
+     It will automaticly search for the content you selected.
 
-## Requirements
+<br>
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+> if you type ***soso*** (search on Stack Overflow) you will get all available commands.
 
-## Extension Settings
+> If you dont get any results or they dont fit, you can click Google or Stack Overflow search to search it directl on Google/Stack Overflow
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+###Example
 
-For example:
+![example input](./images/example_input.png)
 
-This extension contributes the following settings:
+![example input](./images/example_result.png)
+- 🔎: Search the question directly in Google or Stack overflow
+- 🔺: Score of the question
+- 🏷️: Tags of the question
+- 👨‍💻: Person asking the question
+- ✔️: Question marked as answered
+- 🤔: Question not marked as answered
+- 👓: Number of views the question got
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
+---
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Finished version of the extension.

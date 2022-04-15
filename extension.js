@@ -96,7 +96,7 @@ async function requestQuestion(title, tag = '') {
 	//map the result to fit vscode's quick pick
 	const mappedQuestions = result.data.items.map((question) => {
 		return {
-			label: `🔺${question.score} | ${question.title} |> ${question.owner.display_name}`,
+			label: `🔺${question.score} | ${question.title} | 👨‍💻 ${question.owner.display_name}`,
 			detail: ` ${question.tags
 				.reduce((acc, curr) => `${acc} / ${curr}`, '🏷️ Tags: ')
 				.toString()} | Answered: ${
