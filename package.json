@@ -4,6 +4,7 @@
 	"description": "Search a Stackoverflow question by it's title in the editor",
 	"publisher": "DerPenz",
 	"version": "1.0.0",
+	"repository": "https://github.com/Der-Penz/vscode-Stack-Overlow-editor-search",
 	"keywords": [
 		"stackoverflow",
 		"search",
