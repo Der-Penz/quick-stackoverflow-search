@@ -1,6 +1,5 @@
 const vscode = require('vscode');
 const axios = require('axios');
-const { isReturnStatement } = require('typescript');
 
 const URL_STACKOVERFLOW_API =
 	'https://api.stackexchange.com/2.2/search?order=desc&sort=votes&';
@@ -16,7 +15,7 @@ function activate(context) {
 
 	let searchBySelection = vscode.commands.registerCommand(
 		'quick-stackoverflow-search.soso-selection',
-		async function () {
+		async () => {
 			
 			//select the editor
 			const editor = vscode.window.activeTextEditor;
@@ -42,7 +41,7 @@ function activate(context) {
 			selectedText = selectedText.trim();
 
 			//request the question
-			requestQuestion(selectedText);
+			await requestQuestion(selectedText);
 		}
 	);
 
@@ -53,7 +52,7 @@ function activate(context) {
 			const clipboard = await vscode.env.clipboard.readText();
 
 			//request the question
-			requestQuestion(clipboard);
+			await requestQuestion(clipboard);
 		}
 	);
 
@@ -75,7 +74,7 @@ function activate(context) {
 			const tag = input.split('/')[1] || '';
 
 			//request the question
-			requestQuestion(intitle, tag);
+			await requestQuestion(intitle, tag);
 		}
 	);
 
